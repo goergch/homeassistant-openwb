@@ -1,0 +1,12 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Define the OpenWB address in your network",
+                "data": {
+                    "openwb_address": "OpenWB hostname or ip adress"
+                }
+            }
+        }
+    }
+}

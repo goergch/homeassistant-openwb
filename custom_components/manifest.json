@@ -1,0 +1,13 @@
+{
+    "domain": "openwb",
+    "name": "OpenWB",
+    "documentation": "https://github.com/goergch/openwb",
+    "issue_tracker": "https://github.com/goergch/openwb/issues",
+    "dependencies": ["mqtt"],
+    "mqtt": [
+        "openwb/#"
+      ],
+    "after_dependencies": [],
+    "codeowners": ["@goergch"],
+    "config_flow": true
+}
