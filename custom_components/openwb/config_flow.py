@@ -1,5 +1,7 @@
 from homeassistant import config_entries
-from .const import DOMAIN, CONF_OPENWB_BASE_TOPIC
+from homeassistant.components.mqtt import valid_subscribe_topic
+from .const import DOMAIN, CONF_OPENWB_BASE_TOPIC, CONF_DISCOVERY_PREFIX
+import voluptuous as vol
 
 class OpenWbConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow."""
@@ -40,7 +42,7 @@ class OpenWbConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             return await self.async_step_config()
         return await self.async_step_confirm()
 
-     async def async_step_config(self, user_input=None):
+    async def async_step_config(self, user_input=None):
         """Confirm the setup."""
         errors = {}
         data = {CONF_DISCOVERY_PREFIX: self._prefix}

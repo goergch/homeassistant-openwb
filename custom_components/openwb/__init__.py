@@ -5,6 +5,6 @@ from .const import DOMAIN, CONF_OPENWB_ADDRESS
 
 
 async def async_setup(hass: HomeAssistantType, config: dict):
-    """Set up the Tasmota component."""
+    """Set up the OpenWb component."""
     return True
 
