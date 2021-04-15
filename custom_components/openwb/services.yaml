@@ -1,0 +1,16 @@
+set_charge_mode:
+    name: Set Charge Mode
+    description: Sets the desired charge mode
+    fields:
+      charge_mode:
+        name: Charge Mode
+        required: true
+        example: "immediate"
+        selector:
+          select:
+            options:
+              - "stop"
+              - "standby"
+              - "min+pv"
+              - "pv"
+              - "immediate"

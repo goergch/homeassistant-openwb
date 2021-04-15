@@ -1,0 +1,1 @@
+openWB/global/ChargeMode Enum
